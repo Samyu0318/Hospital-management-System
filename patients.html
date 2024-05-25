@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Manage Patients</h2>
+        <form id="patientForm">
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" required>
+            <label for="patientAge">Age:</label>
+            <input type="number" id="patientAge" required>
+            <label for="patientGender">Gender:</label>
+            <select id="patientGender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">Add Patient</button>
+        </form>
+        <h3>Patient List</h3>
+        <ul id="patientList"></ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+    <script src="patients.js"></script>
+</body>
+</html>
